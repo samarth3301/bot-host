@@ -2,7 +2,8 @@ import os
 import discord
 from discord.ext import commands
 import jishaku
-from dotenv import load_dotenv
+
+TOKEN = ""  # Enter your discord client's token here
 
 intents = discord.Intents.all()
 intents.presences = False
@@ -19,4 +20,4 @@ async def on_ready():
     await bot.load_extension("jishaku")
 
 
-bot.start(os.environ.get("TOKEN"))
+bot.run(TOKEN)
