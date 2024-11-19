@@ -1,0 +1,73 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "discord",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "discord",
+        "description": "discord",
+        "detail": "discord",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "jishaku",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jishaku",
+        "description": "jishaku",
+        "detail": "jishaku",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "TOKEN = input(\"Enter the token :\")\nintents = discord.Intents.all()\nintents.presences = False\nbot = commands.AutoShardedBot(\n    command_prefix=\"-\",\n    intents=intents,\n    owner_ids=[\"1139950107995934863\"]\n)\n@bot.event\nasync def on_ready():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "intents",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "intents = discord.Intents.all()\nintents.presences = False\nbot = commands.AutoShardedBot(\n    command_prefix=\"-\",\n    intents=intents,\n    owner_ids=[\"1139950107995934863\"]\n)\n@bot.event\nasync def on_ready():\n    print(\"Bot is ready\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "intents.presences",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "intents.presences = False\nbot = commands.AutoShardedBot(\n    command_prefix=\"-\",\n    intents=intents,\n    owner_ids=[\"1139950107995934863\"]\n)\n@bot.event\nasync def on_ready():\n    print(\"Bot is ready\")\n    await bot.load_extension(\"jishaku\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "bot = commands.AutoShardedBot(\n    command_prefix=\"-\",\n    intents=intents,\n    owner_ids=[\"1139950107995934863\"]\n)\n@bot.event\nasync def on_ready():\n    print(\"Bot is ready\")\n    await bot.load_extension(\"jishaku\")\nbot.run(TOKEN)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
